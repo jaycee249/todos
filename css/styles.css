@@ -7,6 +7,7 @@ h1 {
   font-size: 3em;
 }
 
+
 p1,p4 {
   color: #ffffff;
   font-size: 3em;
@@ -14,11 +15,28 @@ p1,p4 {
   text-shadow: black 1px 3px;
   font-family: 'love ya like a sister', serif ;
 }
-li {
+
+ul {
+  display: flex;
+  flex-flow:column;
+  align-items: flex-start;
+}
+li, label {
   list-style: none;
+  color: rgb(123, 219, 237);
+  font-size: 25px;
+  text-shadow: black 1px 4px;
+  font-family: 'annie use your telescope', serif;
+  margin-left: 4px;
+}
+button {
+  color: grey;
   font-size: 20px;
-  float: left;
-  color: pink;
+  background-color: rgba(255, 255, 255, .9);
+  border: none;
+  border-radius: 3px;
+  margin-top: 2px;
+  margin-left: 4px;
 }
 
 .background {
@@ -55,22 +73,29 @@ input {
   border-radius: 3px;
   color: black;
   font-size: 20px;
+  color: rgb(123, 219, 237);
+  font-family: 'annie use your telescope', serif;
 }
+
+
 .btn-primary{
   color: grey;
+  font-size: 20px;
   position: absolute;
   background-color: rgba(255, 255, 255, .9);
   border: none;
   border-radius: 3px;
+  margin-top: 2px;
+  margin-left: 4px;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
     background-color: rgba(123, 219, 237, .7);
 }
 
 .you-will {
   background-color: rgba(128, 133, 194, .4);
   height: 30em;
-  width: 25em;
+  width: 31em;
   text-align: center;
 }
 
@@ -92,7 +117,7 @@ p2{
 .you-did{
   background-color: rgba(123, 219, 237, .4);
   height: 30em;
-  width: 25em;
+  width: 31em;
   text-align: center;
 }
 

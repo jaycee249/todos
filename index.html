@@ -25,17 +25,20 @@
             <!-- <div> -->
               <div class="you-can">
                 <h1>You <b>CAN</b>.</h1>
-                <div>
+                <p>
+                  <label for="new-task"></label><input id="new-task" placeholder="Goals for the day" type="text"><button class="btn-primary">🙌🏽</button>
+                </p>
+                <!-- <div>
                   <input type="text" id="item" placeholder="Goals for the day">
                   <button id="add" class="btn-primary">🙌</button>
-                </div>
+                </div> -->
               </div>
             <!-- </div> -->
           <div class="sections">
             <div class="you-will ">
               <p1>You <b>Will</b>.</p1>
-              <ul class="todo" id="todo">
-                <!-- <li>this is an item</li><button id="done doneButton" class="btn-primary">DONE.</button> -->
+              <ul id="incomplete-tasks">
+			          <li><input type="checkbox"><label>Goals</label><input type="text"><button class="edit">Edit</button><button class="delete btn-primary">Delete</button></li>
               </ul>
             </div>
 
@@ -47,8 +50,7 @@
 
             <div class="you-did ">
               <p4>You <b>Did!!</b></p></p4>
-              <ul class="done">
-                <!-- <li>done done</li><button id="remove removeButton" class="btn-primary">Remove</button> -->
+              <ul id="completed-tasks">
               </ul>
             </div>
           </div>
@@ -61,5 +63,7 @@
 
   <!-- javascript links -->
   <script src="js/scripts.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
 </body>
 </html>
